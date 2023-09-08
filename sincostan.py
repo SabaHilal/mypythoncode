@@ -1,13 +1,11 @@
+# Import math Library
 import math
 
-given_value = 0
-
-def sincostanfunc(x):
-    print("sin ","%.1f" %x , math.sin(math.pi/3))
-    print("cos ", "%.1f" %x, math.cos(math.pi/6))
-    print("tan ", "%.1f" % x, math.tan(math.pi/3))
-    
-while given_value <= 10:
-    print('given value is: ', "%.1f" % given_value)
-    sincostanfunc(given_value)
-    given_value = given_value + 0.2
+x = 0
+while x <= 10:
+  print("x is equal to ", round(x,1))
+  print("sin x is ", round(math.sin(x),4))
+  print("cos x is ",round(math.cos(x),4))
+  print("tan x is ",round(math.tan(x),4))
+  print()
+  x = x + 0.2
